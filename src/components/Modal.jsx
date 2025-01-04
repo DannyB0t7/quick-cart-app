@@ -15,10 +15,10 @@ function Modal({ open, onModalClose, cartItems, onRemoveItems, onAddItems }) {
     return () => modal.close();
   }, [open]);
 
-  const totalPrice = cartItems.reduce(
+  const totalPrice = Math.round(cartItems.reduce(
     (totalPrice, item) => totalPrice + item.price * item.quantity,
     0
-  );
+  ),2)
 
   return createPortal(
     <dialog

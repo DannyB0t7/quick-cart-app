@@ -35,7 +35,7 @@ export const PRODUCTS = [
   {
     id: 5,
     name: "LED Light Strips",
-    price: 19.99,
+    price: 19.0,
     image: product5,
   },
   {
