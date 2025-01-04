@@ -10,7 +10,7 @@ function CartItem({ cartItem, onRemoveItems, onAddItems }) {
   };
 
   return (
-    <div className="flex gap-5">
+    <div className="sm:flex-row gap-5 flex flex-col">
       <img src={cartItem.image} alt={cartItem.name} className="h-20 w-20" />
       <div>
         <p>{cartItem.name}</p>

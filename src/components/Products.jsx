@@ -3,7 +3,6 @@ import Button from "./UI/Button";
 
 function Products({ product, onAddToCart }) {
   const productAddHandler = function () {
-    // console.log(product.name);
     onAddToCart(product);
   };
 

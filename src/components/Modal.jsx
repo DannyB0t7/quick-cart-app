@@ -21,7 +21,10 @@ function Modal({ open, onModalClose, cartItems, onRemoveItems, onAddItems }) {
   );
 
   return createPortal(
-    <dialog ref={dialog} className="p-4 w-1/2 min-h-42 rounded-md max-w-lg">
+    <dialog
+      ref={dialog}
+      className="p-4 w-10/12 sm:w-1/2 min-h-42 max-w-lg rounded-md "
+    >
       <div className="grid gap-5">
         {cartItems.length === 0 && (
           <div className="text-center">
@@ -32,7 +35,10 @@ function Modal({ open, onModalClose, cartItems, onRemoveItems, onAddItems }) {
                 className="max-w-32 max-h-32 block"
               />
             </div>
-            <p className="mt-5"> Your cart is empty. Start shopping to add items!</p>
+            <p className="mt-5">
+              {" "}
+              Your cart is empty. Start shopping to add items!
+            </p>
           </div>
         )}
         {cartItems.length > 0 && (
