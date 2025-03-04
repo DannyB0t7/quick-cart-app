@@ -80,7 +80,7 @@ function App() {
         onAddItems={addToCartHandler}
       />
       <Header onModalOpen={openCartHandler} cartItems={cartItems} />
-      <ul className="products px-3 py-5">
+      <ul className="products px-4 py-6">
         {PRODUCTS.map((product) => (
           <Products
             product={product}

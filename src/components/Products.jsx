@@ -12,7 +12,7 @@ function Products({ product, onAddToCart }) {
       <div className="text-center">
         <p>{product.name}</p>
         <p>${product.price}</p>
-        <Button onClick={productAddHandler} />
+        <Button onClick={productAddHandler}>Add to Cart</Button>
       </div>
     </li>
   );
